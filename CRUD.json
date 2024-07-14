@@ -1,0 +1,78 @@
+PUT /participantes
+{
+  "mappings": {
+    "properties": {
+      "name": {
+        "type": "text"
+      },
+      "age": {
+        "type": "integer"
+      },
+      "email": {
+        "type": "keyword"
+      },
+      "registration_date": {
+        "type": "date",
+        "format": "yyyy-MM-dd"
+      },
+      "interests": {
+        "type": "text"
+      }
+    }
+  }
+}
+
+POST /participantes/_doc/1
+{
+  "name": "Denis",
+  "age": 26,
+  "email": "denis@gmail.com",
+  "registration_date": "2024-07-11",
+  "interests": ["coding", "java"]
+}
+
+POST /participantes/_doc/2
+{
+  "name": "Alexander",
+  "age": 25,
+  "email": "alex@gmail.com",
+  "registration_date": "2024-07-12",
+  "interests": ["python", "IA"]
+}
+
+GET /participantes/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+GET /participantes/_search
+{
+  "query": {
+    "match": {
+      "name": "Denis"
+    }
+  }
+}
+
+
+POST /participantes/_update/1
+{
+  "doc": {
+    "age": 26
+  }
+}
+
+PUT /participants/_doc/1
+{
+  "name": "John Doe",
+  "age": 31,
+  "email": "john.doe@example.com",
+  "registration_date": "2023-06-15",
+  "interests": ["coding", "hiking"]
+}
+
+
+DELETE /participantes/_doc/2
