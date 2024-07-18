@@ -65,14 +65,4 @@ POST /participantes/_update/1
   }
 }
 
-PUT /participants/_doc/1
-{
-  "name": "John Doe",
-  "age": 31,
-  "email": "john.doe@example.com",
-  "registration_date": "2023-06-15",
-  "interests": ["coding", "hiking"]
-}
-
-
 DELETE /participantes/_doc/2
