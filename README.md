@@ -10,3 +10,11 @@
 
 ## Práctica 2 (CRUD): 
 Actividad -> [Json](./Practica_2/CRUD.json)
+
+
+## Práctica 3 (Busqueda y Consultas):
+
+Crear el índice i_ktra_employee  y Cargar la información indicada -> [Json](./Practica_3/indice.json)
+
+Consultas -> [Json](./Practica_3/Consultas.json)
+
